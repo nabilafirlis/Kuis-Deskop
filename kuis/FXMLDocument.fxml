@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="693.0" style="-fx-background-color: #efead8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuis.FXMLDocumentController">
+   <children>
+      <HBox layoutX="71.0" layoutY="86.0" prefHeight="266.0" prefWidth="446.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="40.0">
+               <children>
+                  <Label text="Merek" />
+                  <Label text="Harga" />
+                  <Label text="Jenis" />
+                  <Label text="Warna" />
+                  <Label prefHeight="18.0" prefWidth="90.0" text="Tanggal Masuk" />
+               </children>
+            </VBox>
+            <VBox prefHeight="326.0" prefWidth="217.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="merek" promptText="Masukkan Merk" />
+                  <TextField fx:id="warna" promptText="Masukkan Harga" />
+                  <ComboBox fx:id="jenis" prefWidth="150.0" promptText="Pilih Jenis" />
+                  <TextField fx:id="harga" promptText="Masukkan Warna" />
+                  <DatePicker fx:id="tanggal" promptText="Pilih Tanggal" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="simpan" layoutX="287.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #309636;" text="Tambah Data" textFill="#e4ece4" />
+      <Label layoutX="239.0" layoutY="37.0" prefHeight="30.0" prefWidth="229.0" text="Form Input Data Setrika">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
